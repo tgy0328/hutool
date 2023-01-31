@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2>Hutool-captcha验证码验证</h2>
+<form action="/loginc" method="post">
+  <input type="text" name="name" placeholder="请输入用户名"><br>
+  <input type="password" name="password" placeholder="请输入密码"><br>
+  <input type="text" name="verifyCode" placeholder="请输入验证码" required="true">
+  <img alt="单击图片刷新!" class="pointer" src="/common/verify"
+       onclick="this.src='/common/verify?d='+new Date()*1">
+  </br>
+  <button type="submit" value="submit">登陆</button>
+</form>
+
+
+</body>
+</html>
